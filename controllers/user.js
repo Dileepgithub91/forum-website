@@ -23,7 +23,7 @@ var registerUser = async (req, res) => {
       return res.status(400).send({ status: false, message: "Missing password fields" });
     }
    
-    const created = await User.create({data });
+    const created = await User.create(data );
 
     // create random Token
     const rand = () => {
