@@ -2,7 +2,7 @@ const Sequelize = require('sequelize');
 
 const sequelize = new Sequelize("sequelize_forum", "root", "Dileep91@", {
   dialect: "mysql",
-  host:"localhost",
+  host:"127.0.0.1",
   port:3306,
 });
 
