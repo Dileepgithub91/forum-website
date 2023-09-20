@@ -1,7 +1,9 @@
 const Sequelize = require('sequelize');
 
 const sequelize = new Sequelize("sequelize_forum", "root", "Dileep91@", {
-  dialect: "mysql"
+  dialect: "mysql",
+  host:"localhost",
+  port:3306,
 });
 
 sequelize.authenticate()
